@@ -3,13 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page for Hulu</title>
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
->
+    <meta name="description" content="Stream TV shows, movies, and live TV on Hulu. Watch your favorites anytime, anywhere.">
+    <title>Hulu - Stream Your Favorite TV Shows & Movies</title>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.5.10/css/pico.min.css">
+    <style>
+
+        body {
+            background-color: #141414;
+            color: #fff;
+        }
+
+        .hero {
+        background: url(images/Hulu\ 4.jpg) no-repeat center center/cover;
+        padding: 100px 20px;
+        color: #fff;
+        text-align: center;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #141414;
+        }
+
+        .hero h1 {
+        color: #1ce783;
+        font-size: 2.5rem;
+        }
+
+        .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        }
+
+
+        .cta-button {
+            background-color: #1ce783;
+            color: #141414;
+        }
+
+        .features {
+            text-align: center;
+        }
+
+        .features h2 {
+            color: #1ce783;
+        }
+
+        footer {
+            background-color: #000;
+            color: #777;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hulu</h1>
+
+    <header class="container">
+        <nav>
+            <ul>
+                <li><strong>Hulu</strong></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Live TV</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" role="button" class="secondary">Log In</a></li>
+                <li><a href="#" role="button" class="cta-button">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Stream Endless Entertainment</h1>
+        <p>Watch the latest TV shows, hit movies, and live sports anytime, anywhere.</p>
+        <a href="#" role="button" class="cta-button">Start Your Free Trial</a>
+    </section>
+
+    <section class="features container">
+        <h2>Why Choose Hulu?</h2>
+        <div class="grid">
+            <article>
+                <h3>Exclusive Originals</h3>
+                <p>Stream critically acclaimed Hulu Originals you won't find anywhere else.</p>
+            </article>
+            <article>
+                <h3>Live TV</h3>
+                <p>Watch live sports, news, and events as they happen.</p>
+            </article>
+            <article>
+                <h3>No Ads</h3>
+                <p>Upgrade to our ad-free plan for uninterrupted streaming.</p>
+            </article>
+        </div>
+    </section>
+
+    <footer class="container">
+        <small>&copy; 2024 Hulu, LLC. All rights reserved.</small>
+        <nav>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Help Center</a></li>
+            </ul>
+        </nav>
+    </footer>
+
 </body>
 </html>
